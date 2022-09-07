@@ -15,6 +15,7 @@ html {
 body{
   display: block;
   margin: 8px;
+  background: #f6f6f1;
 }
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -51,6 +52,17 @@ a {
 a:hover {
     background-color: var(--hovercolor);
     color: #fff;
+}
+
+nav > a {
+  margin-left: 24px;
+}
+
+a.readmore, .main > a  {
+  border-bottom: none;
+}
+.description {
+  margin: 12px 0;
 }
 
 ul {

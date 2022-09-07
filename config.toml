@@ -1,4 +1,24 @@
 baseURL = 'http://daabin.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = ''
+title = 'Daabin'
 theme = 'archie'
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
