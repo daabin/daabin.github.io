@@ -16,7 +16,7 @@
 				{{ range $paginator.Pages }}
 				<section class="list-item">
 					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
-					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+					<time>{{ partial "date.html"  . }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
 					<br><div class="description">
 						{{ if isset .Params "description" }}
 						{{ .Description }}
@@ -24,7 +24,7 @@
 						{{ .Summary }}&hellip;
 						{{ end }}
 					</div>
-					<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
+					<!-- <a class="readmore" href="{{ .RelPermalink }}">全文 →</a> -->
 				</section>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}

@@ -1,15 +1,15 @@
 {{ define "main" }}
 {{ if isset .Data "Term" }}
-<h1>Entries tagged - "{{ .Data.Term }}"</h1>
+<h1>🏷 - "{{ .Data.Term }}"</h1>
 {{ else }}
-<h1 class="page-title">All articles</h1>
+<h1 class="page-title">全部文章</h1>
 {{ end }}
 
 <ul class="posts">
 	{{- range .Data.Pages -}}
 		{{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
 		<li class="post">
-			<a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</span>
+			<a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ partial "date.html"  . }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</span>
 		</li>
 		{{- end -}}
 	{{- end -}}

@@ -4,21 +4,22 @@ title = 'Daabin'
 theme = 'archie'
 
 [[menu.main]]
-name = "Home"
+name = "最新文章"
 url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
+name = "全部"
 url = "/posts"
 weight = 2
 
 [[menu.main]]
-name = "About"
-url = "/about"
+name = "标签"
+url = "/tags"
 weight = 3
 
 [[menu.main]]
-name = "Tags"
-url = "/tags"
+name = "鄙人"
+url = "/about"
 weight = 4
+
