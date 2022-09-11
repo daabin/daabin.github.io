@@ -1,4 +1,4 @@
-baseURL = 'http://daabin.github.io/'
+baseURL = 'https://daabin.github.io/'
 languageCode = ''
 title = 'Daabin'
 theme = 'archie'
