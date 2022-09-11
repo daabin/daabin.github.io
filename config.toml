@@ -1,6 +1,6 @@
 baseURL = 'https://daabin.github.io/'
 languageCode = ''
-title = 'Daabin'
+title = '王东坡'
 theme = 'archie'
 
 [[menu.main]]
